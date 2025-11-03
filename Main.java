@@ -81,7 +81,7 @@ public class Main {
 
         char Action = JOptionPane.showInputDialog("Введите дейсивие | (+ => Начать; - => Отказатся)").charAt(0);
         if (!(Action == '-' ^ Action == '+') || Action == '-') System.exit(0);
-        else main(Action == '+' ? new String[]{"Start"} : args);
+        else main(new String[]{"Start"});
         
     }
 
