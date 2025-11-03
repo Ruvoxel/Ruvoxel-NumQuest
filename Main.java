@@ -41,8 +41,8 @@ public class Main {
                     }    
                     else {
                         JOptionPane.showMessageDialog(null, String.format("Ты выйграл!\n\nСообщение: молодец ты, угадал число!\nЧисло: %d\nЖизни (Осталось): %d\nЖизни (Потерял): %d\nВторая жизнь: %s", RandomInt, LiveUser, Totem ? 4 - LiveUser : 3 - LiveUser, Totem ? "Использована" : "Неиспользована"), "Ты победил!", JOptionPane.QUESTION_MESSAGE);
-                        LiveUser = 0;
                         Game_isActive = false;
+                        break;
                     }
                 } catch (Exception error) {
                     JOptionPane.showMessageDialog(null, "Ошибка! Играй по правилам, хорошо?", "Что-то сломалось :(", JOptionPane.ERROR_MESSAGE);
