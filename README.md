@@ -31,7 +31,7 @@
 
 2. Перейдите в папку с проектом:
 
-```bash cd [ Ruvoxel ] - NumQuest```
+```bash cd "[ Ruvoxel ] - NumQuest"```
 
 3. Скомпилируйте игру:
 
