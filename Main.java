@@ -55,6 +55,7 @@ public class Main {
                     String Ready = JOptionPane.showInputDialog("Псс... Парень, вижу ты проиграл да? я думаю, ты хочешь продолжить игру и я знаю как тебе помочь. Ты готов? | (Да - согласится; Нет - Отказатся)").toLowerCase();
                     if (Ready.equals("нет")) {
                         JOptionPane.showMessageDialog(null, String.format("Ну парень, знай как хочешь. И будет по твоему!\n\nЧисло было: %s", RandomInt));
+                        Game_isActive = false;
                         break;
                     
                     
@@ -71,6 +72,7 @@ public class Main {
                     }
                 } else {
                     JOptionPane.showMessageDialog(null, String.format("Я тебе уже давал шанс...\n\nЧисло было: %d", RandomInt));
+                    Game_isActive = false;
                     break;
                     
                 }
