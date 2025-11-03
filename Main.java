@@ -87,12 +87,12 @@ public class Main {
 
     private static void setUserValues() {
         int Integer = random.nextInt(11);
-        
-        Game_isActive = true;   
+          
         LiveUser = 3;
         RandomInt = (byte) (Integer == 0 ? ++Integer : Integer);
 
         if (Totem) Totem = false;
+        if (!Game_isActive) Game_isActive = true;
 
     }
 }
