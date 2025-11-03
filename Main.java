@@ -8,6 +8,7 @@ public class Main {
     private static boolean Totem = false;
 
     private static Random random = new Random();
+    
     public static void main(String[] args) {
         if (args.length == 1 && args[0].equals("Start")) setUserValues();
 
